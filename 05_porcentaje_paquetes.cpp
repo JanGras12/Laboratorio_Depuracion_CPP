@@ -5,12 +5,13 @@ int main() {
     std::cout << "Introduce total de paquetes y paquetes sospechosos: ";
     std::cin >> total >> sospechosos;
 
-    double porcentaje = sospechosos / total * 100;
+    double porcentaje = ((float)sospechosos/total)*100;
     std::cout << "Porcentaje sospechoso: " << porcentaje << "%\n";
 
     if (porcentaje >= 20) {
         std::cout << "ALERTA: trafico sospechoso\n";
-    } else {
+    } 
+    else {
         std::cout << "Trafico normal\n";
     }
 
